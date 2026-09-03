@@ -1,0 +1,627 @@
+/* =========================================================
+   Metabolica Mente A.S.D.
+   Colori del logo (blu + oro), verde della grafica Instagram,
+   fondo crema. Impostazione grafica ripresa dal mockup fornito.
+   ========================================================= */
+
+:root {
+    --mm-navy: #0c2f54;
+    --mm-navy-dark: #08203a;
+    --mm-navy-light: #124273;
+    --mm-blue: #1a508b;
+    --mm-gold: #c89538;
+    --mm-gold-soft: #dfb15b;
+    --mm-gold-light: #ffd88a;
+    --mm-green: #15803d;
+    --mm-green-light: #7dbe3c;
+    --mm-cream: #faf8f5;
+    --mm-sand: #f4ede0;
+    --mm-ink: #1a2b3c;
+    --mm-muted: #64748b;
+    --mm-line: #e2e8f0;
+
+    --mm-font-body: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --mm-font-heading: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+
+    --mm-radius: 24px;
+}
+
+/* ---------------- base ---------------- */
+
+body {
+    font-family: var(--mm-font-body);
+    background-color: var(--mm-cream);
+    color: var(--mm-ink);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6,
+.mm-heading {
+    font-family: var(--mm-font-heading);
+    letter-spacing: -.015em;
+}
+
+.fw-extrabold {
+    font-weight: 800 !important;
+}
+
+.text-navy { color: var(--mm-navy) !important; }
+.bg-navy { background-color: var(--mm-navy) !important; }
+.text-gold { color: var(--mm-gold) !important; }
+.bg-gold { background-color: var(--mm-gold) !important; }
+.text-gold-light { color: var(--mm-gold-light) !important; }
+.border-gold { border-color: var(--mm-gold) !important; }
+.text-verde { color: var(--mm-green) !important; }
+
+.mm-max-700 { max-width: 700px; }
+.mm-max-800 { max-width: 800px; }
+
+a { color: var(--mm-blue); }
+a:hover { color: var(--mm-navy); }
+
+/* ---------------- barra promozionale in alto ---------------- */
+
+.mm-promo {
+    background: linear-gradient(90deg, var(--mm-navy) 0%, var(--mm-navy-light) 50%, var(--mm-navy) 100%);
+    color: #fff;
+    font-size: .82rem;
+    padding: 7px 15px;
+}
+
+.mm-promo a {
+    color: var(--mm-gold-light);
+    font-weight: 700;
+}
+
+.mm-promo a:hover {
+    color: #fff;
+}
+
+/* ---------------- navbar ---------------- */
+
+.mm-navbar {
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(200, 149, 56, .25);
+}
+
+.mm-navbar .nav-link {
+    font-weight: 600;
+    color: #334155 !important;
+    font-size: .9rem;
+    transition: color .2s;
+}
+
+.mm-navbar .nav-link:hover,
+.mm-navbar .nav-link.attivo {
+    color: var(--mm-gold) !important;
+}
+
+.mm-navbar .navbar-brand img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid var(--mm-gold);
+    background: #fff;
+}
+
+.mm-marchio-nome {
+    font-family: var(--mm-font-heading);
+    font-weight: 800;
+    font-size: 1.12rem;
+    color: var(--mm-navy);
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.mm-marchio-sotto {
+    font-size: .64rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mm-gold);
+    font-weight: 700;
+}
+
+/* ---------------- bottoni ---------------- */
+
+.btn-mm-oro {
+    background: linear-gradient(135deg, var(--mm-gold) 0%, var(--mm-gold-soft) 100%);
+    color: var(--mm-navy);
+    font-weight: 800;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.btn-mm-oro:hover,
+.btn-mm-oro:focus {
+    color: var(--mm-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(200, 149, 56, .35);
+}
+
+.btn-mm-blu {
+    background: linear-gradient(135deg, var(--mm-navy) 0%, var(--mm-blue) 100%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 12px 28px;
+    border: 1px solid rgba(200, 149, 56, .4);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.btn-mm-blu:hover,
+.btn-mm-blu:focus {
+    background: linear-gradient(135deg, var(--mm-navy-dark) 0%, var(--mm-navy) 100%);
+    color: var(--mm-gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(12, 47, 84, .3);
+}
+
+.btn-mm-contorno {
+    border: 2px solid var(--mm-navy);
+    color: var(--mm-navy);
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 26px;
+    background: transparent;
+    transition: all .2s;
+}
+
+.btn-mm-contorno:hover {
+    background: var(--mm-navy);
+    color: #fff;
+}
+
+.btn-mm-verde {
+    background: var(--mm-green);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 12px 28px;
+}
+
+.btn-mm-verde:hover {
+    background: #10692f;
+    color: #fff;
+}
+
+/* ---------------- hero ---------------- */
+
+.mm-hero {
+    background: linear-gradient(180deg, var(--mm-cream) 0%, var(--mm-sand) 50%, var(--mm-cream) 100%);
+    padding: 70px 0 90px;
+    position: relative;
+}
+
+.mm-hero h1 {
+    line-height: 1.08;
+}
+
+/* Intestazione piu' compatta per le pagine interne */
+.mm-hero-piccolo {
+    padding: 48px 0 52px;
+}
+
+.mm-pillola {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    background: #fff;
+    border: 1px solid var(--mm-line);
+    color: var(--mm-ink);
+    font-size: .82rem;
+    font-weight: 700;
+    padding: .45rem 1rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+/* ---------------- schede ---------------- */
+
+.mm-card {
+    background: #fff;
+    border-radius: var(--mm-radius);
+    border: 1px solid var(--mm-line);
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .03);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.mm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+}
+
+.mm-card h3,
+.mm-card h4 {
+    color: var(--mm-navy);
+    font-weight: 700;
+}
+
+.mm-occhiello {
+    display: inline-block;
+    font-size: .74rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: .35rem 1rem;
+    border-radius: 999px;
+    background: var(--mm-navy);
+    color: var(--mm-gold-light);
+}
+
+.mm-occhiello-oro {
+    background: var(--mm-gold);
+    color: #fff;
+}
+
+/* ---------------- biglietto coupon ---------------- */
+
+.mm-biglietto {
+    background: linear-gradient(135deg, #0a223a 0%, var(--mm-navy) 50%, #134477 100%);
+    border: 4px solid var(--mm-gold);
+    border-radius: 28px;
+    color: #fff;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(12, 47, 84, .25);
+}
+
+.mm-biglietto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--mm-gold), var(--mm-gold-light), var(--mm-gold));
+}
+
+.mm-biglietto h2,
+.mm-biglietto h3,
+.mm-biglietto h4 {
+    color: #fff;
+}
+
+.mm-codice {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+.mm-riquadro-chiaro {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+}
+
+.mm-riquadro-scuro {
+    background: rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    padding: .6rem .8rem;
+}
+
+/* Anteprima dell'immagine scaricabile */
+.mm-anteprima {
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(12, 47, 84, .18);
+    border: 1px solid var(--mm-line);
+}
+
+.mm-stato {
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: .35rem 1rem;
+    border-radius: 999px;
+}
+
+.mm-stato-valido { background: rgba(21, 128, 61, .15); color: #15803d; }
+.mm-stato-usato { background: rgba(220, 53, 69, .14); color: #b02a37; }
+.mm-stato-scaduto { background: rgba(100, 116, 139, .16); color: var(--mm-muted); }
+
+/* ---------------- moduli ---------------- */
+
+.mm-form-box {
+    background: #fff;
+    border-radius: var(--mm-radius);
+    border: 1px solid var(--mm-line);
+    box-shadow: 0 10px 30px rgba(12, 47, 84, .07);
+    padding: 2.6rem;
+}
+
+.mm-form-box-oro {
+    border-top: 5px solid var(--mm-gold);
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: .86rem;
+    color: var(--mm-navy);
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: .7rem .9rem;
+    border: 1px solid #d7dee5;
+}
+
+.form-control:focus {
+    border-color: var(--mm-gold);
+    box-shadow: 0 0 0 .2rem rgba(200, 149, 56, .18);
+}
+
+.mm-aiuto {
+    font-size: .82rem;
+    color: var(--mm-muted);
+}
+
+/* ---------------- elenchi e note ---------------- */
+
+.mm-lista-spunta {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mm-lista-spunta li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: .55rem;
+}
+
+.mm-lista-spunta li::before {
+    content: "\f633"; /* bi-check-lg */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0;
+    top: -.1rem;
+    color: var(--mm-green);
+    font-weight: 700;
+}
+
+.mm-nota {
+    background: rgba(200, 149, 56, .1);
+    border-left: 4px solid var(--mm-gold);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: .92rem;
+}
+
+/* ---------------- footer ---------------- */
+
+.mm-footer {
+    background: var(--mm-navy);
+    color: rgba(255, 255, 255, .8);
+    padding: 3.5rem 0 1.5rem;
+    border-top: 4px solid var(--mm-gold);
+}
+
+.mm-footer h4,
+.mm-footer h5 {
+    color: var(--mm-gold-light);
+    font-family: var(--mm-font-heading);
+    font-weight: 800;
+}
+
+.mm-footer h5 {
+    font-size: .82rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.mm-footer a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+
+.mm-footer a:hover {
+    color: var(--mm-gold-light);
+}
+
+.mm-footer-basso {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .5);
+}
+
+/* ---------------- stampa ---------------- */
+
+@media print {
+    .mm-promo,
+    .mm-navbar,
+    .mm-footer,
+    .mm-no-stampa {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    .mm-biglietto {
+        box-shadow: none;
+    }
+}
+
+/* =========================================================
+   Prato illustrato dietro l'intestazione
+   Sfuma via mentre si scorre la pagina (vedi js/sito.js).
+   Se metti una foto in public/img/prato.jpg viene usata quella.
+   ========================================================= */
+
+.mm-hero {
+    overflow: hidden;
+}
+
+.mm-prato {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 72%;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 0;
+    will-change: opacity, transform;
+}
+
+/* velo chiaro sopra al prato, cosi' il testo resta sempre leggibile */
+.mm-prato::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+        var(--mm-cream) 0%,
+        rgba(250, 248, 245, .82) 26%,
+        rgba(250, 248, 245, .35) 58%,
+        rgba(250, 248, 245, 0) 100%);
+}
+
+.mm-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mm-prato { transition: none !important; }
+}
+
+/* =========================================================
+   Bollini colorati e liste con icona
+   ========================================================= */
+
+.mm-bollo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex: 0 0 40px;
+}
+
+.mm-bollo-oro    { background: rgba(200, 149, 56, .16); color: var(--mm-gold); }
+.mm-bollo-verde  { background: rgba(21, 128, 61, .14);  color: var(--mm-green); }
+.mm-bollo-blu    { background: rgba(26, 80, 139, .12);  color: var(--mm-blue); }
+.mm-bollo-cielo  { background: rgba(56, 163, 209, .16); color: var(--mm-sky); }
+.mm-bollo-corallo{ background: rgba(239, 108, 77, .15); color: var(--mm-coral); }
+
+.mm-lista-icone {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.mm-lista-icone li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: .7rem;
+}
+
+/* Cerchio grande per le icone in cima alle schede */
+.mm-icona-cerchio {
+    width: 62px;
+    height: 62px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 1.1rem;
+    transition: transform .3s ease;
+}
+
+.mm-card:hover .mm-icona-cerchio {
+    transform: rotate(-6deg) scale(1.06);
+}
+
+/* =========================================================
+   Onde di separazione fra le sezioni
+   ========================================================= */
+
+.mm-onda {
+    display: block;
+    width: 100%;
+    height: 54px;
+    line-height: 0;
+}
+
+.mm-onda svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================================================
+   Comparsa morbida degli elementi allo scorrimento
+   ========================================================= */
+
+.mm-anim {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.mm-anim.visibile {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mm-anim {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================================================
+   Tocchi di colore in piu'
+   ========================================================= */
+
+:root {
+    --mm-sky: #38a3d1;
+    --mm-coral: #ef6c4d;
+}
+
+.text-cielo { color: var(--mm-sky) !important; }
+.text-corallo { color: var(--mm-coral) !important; }
+
+.mm-sezione-verde {
+    background: linear-gradient(180deg, #f2f8ea 0%, #e9f4dd 100%);
+}
+
+/* Il numero grande delle statistiche */
+.mm-numerone {
+    font-family: var(--mm-font-heading);
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+/* Timbro "gratis" ruotato sul biglietto */
+.mm-timbro {
+    display: inline-block;
+    transform: rotate(-6deg);
+    border: 3px dashed var(--mm-gold-light);
+    border-radius: 14px;
+    padding: .35rem 1rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: var(--mm-gold-light);
+    text-transform: uppercase;
+    font-size: .78rem;
+}

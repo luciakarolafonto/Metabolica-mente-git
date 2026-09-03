@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustrazione di un prato con colline, sole e alberi">
+
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#cfe9fb"/>
+      <stop offset="55%"  stop-color="#e6f2fb"/>
+      <stop offset="100%" stop-color="#f6f3ea"/>
+    </linearGradient>
+
+    <linearGradient id="pratoVicino" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#8cc63f"/>
+      <stop offset="100%" stop-color="#4e8b2a"/>
+    </linearGradient>
+
+    <radialGradient id="aloneSole" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffd88a" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#ffd88a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cielo -->
+  <rect width="1600" height="620" fill="url(#cielo)"/>
+
+  <!-- sole con alone -->
+  <circle cx="1290" cy="150" r="180" fill="url(#aloneSole)"/>
+  <circle cx="1290" cy="150" r="62"  fill="#ffd88a"/>
+  <circle cx="1290" cy="150" r="46"  fill="#c89538" opacity=".85"/>
+
+  <!-- nuvole leggere -->
+  <g fill="#ffffff" opacity=".75">
+    <ellipse cx="300" cy="120" rx="90" ry="34"/>
+    <ellipse cx="360" cy="108" rx="66" ry="30"/>
+    <ellipse cx="245" cy="132" rx="55" ry="24"/>
+    <ellipse cx="880" cy="90"  rx="70" ry="26"/>
+    <ellipse cx="930" cy="82"  rx="52" ry="22"/>
+  </g>
+
+  <!-- colline lontane -->
+  <path d="M0 430 Q 210 320 430 420 T 880 400 T 1320 425 T 1600 390 L1600 620 L0 620 Z"
+        fill="#b7dc92"/>
+
+  <!-- colline intermedie -->
+  <path d="M0 480 Q 260 390 520 470 T 1040 460 T 1600 470 L1600 620 L0 620 Z"
+        fill="#9ccf6a"/>
+
+  <!-- alberi sulla collina -->
+  <g>
+    <rect x="196" y="404" width="10" height="44" rx="4" fill="#7a5a34"/>
+    <circle cx="201" cy="386" r="34" fill="#5f9e35"/>
+    <circle cx="178" cy="398" r="24" fill="#6fb03d"/>
+    <circle cx="224" cy="398" r="24" fill="#6fb03d"/>
+
+    <rect x="1116" y="418" width="9" height="40" rx="4" fill="#7a5a34"/>
+    <circle cx="1120" cy="402" r="29" fill="#5f9e35"/>
+    <circle cx="1100" cy="412" r="20" fill="#6fb03d"/>
+    <circle cx="1140" cy="412" r="20" fill="#6fb03d"/>
+
+    <rect x="700" y="430" width="8" height="34" rx="4" fill="#7a5a34"/>
+    <circle cx="704" cy="418" r="24" fill="#66a83a"/>
+  </g>
+
+  <!-- prato in primo piano -->
+  <path d="M0 530 Q 400 495 800 520 T 1600 505 L1600 620 L0 620 Z" fill="url(#pratoVicino)"/>
+
+  <!-- fili d'erba -->
+  <g stroke="#a2d16a" stroke-width="4" stroke-linecap="round" opacity=".9">
+    <path d="M60 560 q 6 -22 14 -30"/>
+    <path d="M150 566 q -6 -20 -14 -28"/>
+    <path d="M255 556 q 7 -24 16 -32"/>
+    <path d="M380 570 q -7 -22 -16 -30"/>
+    <path d="M505 560 q 6 -24 15 -32"/>
+    <path d="M640 572 q -6 -20 -15 -28"/>
+    <path d="M780 562 q 7 -24 16 -32"/>
+    <path d="M915 574 q -7 -22 -16 -30"/>
+    <path d="M1060 560 q 6 -24 15 -32"/>
+    <path d="M1200 570 q -7 -22 -16 -30"/>
+    <path d="M1340 558 q 7 -24 16 -32"/>
+    <path d="M1480 570 q -7 -22 -16 -30"/>
+  </g>
+
+  <!-- fiorellini -->
+  <g>
+    <g transform="translate(210,590)">
+      <circle r="9" fill="#ffffff"/><circle r="4" fill="#c89538"/>
+    </g>
+    <g transform="translate(470,578)">
+      <circle r="8" fill="#ffffff"/><circle r="3.5" fill="#c89538"/>
+    </g>
+    <g transform="translate(720,596)">
+      <circle r="9" fill="#fff3c9"/><circle r="4" fill="#c89538"/>
+    </g>
+    <g transform="translate(1010,580)">
+      <circle r="8" fill="#ffffff"/><circle r="3.5" fill="#c89538"/>
+    </g>
+    <g transform="translate(1290,594)">
+      <circle r="9" fill="#ffffff"/><circle r="4" fill="#c89538"/>
+    </g>
+    <g transform="translate(1450,576)">
+      <circle r="8" fill="#fff3c9"/><circle r="3.5" fill="#c89538"/>
+    </g>
+  </g>
+
+</svg>
